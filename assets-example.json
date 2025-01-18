@@ -1,0 +1,24 @@
+{
+    "defaults": {
+        "username":"ubuntu",
+        "key_path":"~/.ssh/id_ed25519",
+        "tracked_file_path": "~/tracked_files.txt"
+    },
+    "machines": [
+        {
+            "name": "Prometheus",
+            "host": "192.168.1.5"
+        },
+        {
+            "name": "Grafana",
+            "host": "192.168.1.6",
+            "key_path":"~/.ssh/id_rsa"
+        },
+        {
+            "name": "Frigate",
+            "host": "192.168.1.7",
+            "username": "admin",
+            "password": "bad_practice"
+        }
+    ]
+}
